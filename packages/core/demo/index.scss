@@ -1,4 +1,6 @@
 $default_transition: all .1s ease-out;
+@import "../../node_modules/@carbon/themes/scss/themes";
+$carbon--theme: $carbon--theme--g100;
 
 * {
 	box-sizing: border-box;
@@ -166,4 +168,25 @@ div.options {
 	padding: 30px;
 	background-color: #fff;
 	box-shadow: 0 15px 34px -11px rgba(22, 56, 107, 0.1);
+}
+//**********************************************
+// Dark Theme
+//***********************************************
+
+$gray100: #171717;
+$gray90: #282828;
+$gray10: #f3f3f3;
+
+body.carbon--dark {
+  background-color: $gray100;
+  div.content {
+    color: $gray10;
+  }
+  div.options {
+    background: $gray90;
+    box-shadow: 0 15px 34px -11px rgba(14, 34, 65, 0.123);
+  }
+  div.demo-chart-holder {
+    background: $gray90;
+  }
 }
